@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exercise#2</title>
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        .row {
+          display: flex;
+        }
+        
+        /* Create two equal columns that sits next to each other */
+        .column {
+            flex: left;
+          padding: 10px;
+          height:auto; 
+        }
+        .left {
+              width: 75%;
+              }
+
+            .right {
+                  width: 25%;
+                }
+                .row:after {
+                content: "";
+               display: table;
+            clear: both;
+               }
+
+        </style>
+        </head>
+        <body style="background-color:#F7F6B9;margin:0px 50px 0px 50px;">
+        
+        <div style="background-color:#F5E41A;padding:0px 15px 15px 0px;text-align:left;"><h1>2-column layout</h1></div>
+        <div class="row">
+          <div class="column left" style="background-color:white;">
+            
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rhoncus fermentum bibendum. Nullam hendrerit luctus velit, in hendrerit lectus tincidunt nec. Aliquam erat volutpat. Vestibulum nulla ligula, gravida a sodales id, aliquam at mi.Curabitur bibendum magna at hendrerit aliquam. Sed vitae tortor dolor. Vivamus mollis at diam in imperdiet. Fusce ullamcorper felis vulputate, aliquet urna vel, luctus dui. Sed sit amet faucibus nulla.<br><br> Praesent at nisl id lectus aliquet dictum. Donec varius nulla ut metus eleifend, vel aliquet tortor convallis. Nam hendrerit ultricies libero non euismod. Praesent non tellus pharetra, sollicitudin nisl vel, tincidunt nibh.
+
+                Phasellus ultricies elit sit amet odio scelerisque aliquam. Vestibulum vestibulum ante orci, vel dapibus sem dictum quis. Sed in diam sit amet dui sollicitudin sodales id in urna. Ut nec ante quis odio eleifend feugiat.<br><br> Sed sit amet sapien vitae enim viverra condimentum. Nam semper ex quis elementum aliquam. Sed egestas convallis ipsum sit amet placerat. Ut dictum et augue sit amet tempus. In condimentum arcu quis nisi molestie, vel placerat quam consequat. Nullam dictum arcu nisi, quis pharetra leo porttitor sed. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus dui neque, accumsan vel velit nec, commodo sagittis ex.
+                
+                Sed in maximus tortor. Morbi sed felis mattis, venenatis metus at, fringilla leo. Aenean dictum tellus ut sodales tempus. Nam ac malesuada augue. Ut nibh lorem, mattis vel ultricies eget, venenatis sed turpis. Ut venenatis metus eget nunc lobortis, in elementum justo malesuada. Maecenas efficitur tincidunt metus, in vestibulum neque molestie id. Nulla facilisi.</p>
+          </div>
+          <div class="column right" style="background-color:#D7DBDD;">
+            <ul>
+                <li> item #1</li>
+                <li> item #2</li>
+                <li> item #3</li>
+            </ul>
+          </div>
+        </div>
+</body>
+</html>
